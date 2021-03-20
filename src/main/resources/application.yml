@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: FbLoginAuth
+
+security:
+  oauth2:
+    client:
+      clientId: 484315562741505
+      clientSecret: a2efa5472ac46cb64836e2c364f911cf
+      accessTokenUri: https://graph.facebook.com/oauth/access_token
+      userAuthorizationUri: https://www.facebook.com/dialog/oauth
+      tokenName: oauth_token
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: https://graph.facebook.com/me
